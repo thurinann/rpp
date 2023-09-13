@@ -1,0 +1,9 @@
+use serde_derive::{Deserialize, Serialize};
+
+#[derive(Default, Debug, Deserialize, Serialize)]
+pub struct Config {
+    pub code: String,
+    pub include_paths: Vec<String>,
+    pub link: Vec<String>,
+    pub dev_code: String,
+}
